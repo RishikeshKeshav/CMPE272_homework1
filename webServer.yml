@@ -1,0 +1,6 @@
+---
+- hosts: VirtualMachines
+  become: true
+  tasks:
+  - name: install apache2
+    apt: name=apache2 state=latest update_cache=yes
